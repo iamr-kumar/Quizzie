@@ -1,6 +1,11 @@
 package com.example.quizzie
 
 object Constants {
+
+    const val USER_NAME:String = "user_name"
+    const val TOTAL_QUESTIONS:String = "total_questions"
+    const val CORRECT_ANSWERS: String = "correct_answer"
+
     fun getQuestion(): ArrayList<QuestionModel> {
         val questionsList = ArrayList<QuestionModel>();
 
@@ -64,12 +69,56 @@ object Constants {
             3
         );
 
+        val que7 = QuestionModel(
+            1,
+            "What country does this flag belong to?", R.drawable.ic_flag_of_australia,
+            "Australia",
+            "Japan",
+            "New Zealand",
+            "England",
+            1
+        );
+
+        val que8 = QuestionModel(
+            1,
+            "What country does this flag belong to?", R.drawable.ic_flag_of_fiji,
+            "Spain",
+            "Fiji",
+            "Indonasia",
+            "Greenland",
+            2
+        );
+
+        val que9 = QuestionModel(
+            1,
+            "What country does this flag belong to?", R.drawable.ic_flag_of_kuwait,
+            "Austalia",
+            "USA",
+            "Germany",
+            "Kuwait",
+            4
+        );
+
+        val que10 = QuestionModel(
+            1,
+            "What country does this flag belong to?", R.drawable.ic_flag_of_new_zealand,
+            "Honk Kong",
+            "New Zealand",
+            "India",
+            "Bhutan",
+            2
+        );
+
         questionsList.add(que1);
         questionsList.add(que2);
         questionsList.add(que3);
         questionsList.add(que4);
         questionsList.add(que5);
         questionsList.add(que6);
+        questionsList.add(que7);
+        questionsList.add(que8);
+        questionsList.add(que9);
+        questionsList.add(que10);
 
         return questionsList;
     }
